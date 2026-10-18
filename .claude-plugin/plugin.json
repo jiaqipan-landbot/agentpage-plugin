@@ -1,0 +1,25 @@
+{
+  "name": "agentpage",
+  "displayName": "AgentPage",
+  "description": "Put a lead-catching chat on your website from Claude. Guides you through creating the chat, installing it, and reading your leads and the morning report of who to call back. Uses the AgentPage connector.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jiaqi Pan SL",
+    "url": "https://getagent.page"
+  },
+  "homepage": "https://getagent.page",
+  "repository": "https://github.com/jiaqipan-landbot/agentpage-plugin",
+  "license": "MIT",
+  "documentationUrl": "https://getagent.page/docs",
+  "supportUrl": "https://getagent.page/support",
+  "privacyPolicyUrl": "https://getagent.page/privacy",
+  "termsOfServiceUrl": "https://getagent.page/terms",
+  "keywords": [
+    "agentpage",
+    "leads",
+    "website",
+    "chat",
+    "lead-capture",
+    "skill"
+  ]
+}

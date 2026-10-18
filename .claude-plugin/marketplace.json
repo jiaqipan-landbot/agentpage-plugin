@@ -1,0 +1,30 @@
+{
+  "name": "agentpage",
+  "description": "AgentPage puts a lead-catching chat on your website from Claude, and emails you each lead and a morning report of who to call back.",
+  "owner": {
+    "name": "Jiaqi Pan SL",
+    "url": "https://getagent.page"
+  },
+  "plugins": [
+    {
+      "name": "agentpage",
+      "source": "./",
+      "description": "Guides you through creating a lead-catching chat for your website, installing it, and reading your leads and the morning report. Uses the AgentPage connector.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jiaqi Pan SL",
+        "url": "https://getagent.page"
+      },
+      "homepage": "https://getagent.page",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "agentpage",
+        "leads",
+        "website",
+        "chat",
+        "lead-capture"
+      ]
+    }
+  ]
+}
