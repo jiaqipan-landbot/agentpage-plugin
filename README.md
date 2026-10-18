@@ -1,6 +1,6 @@
 # AgentPage
 
-AgentPage puts a lead-catching chat on your website, and you set it up by asking Claude. Give Claude your website address and what a good enquiry looks like for your business. AgentPage reads your public pages, builds a chat that answers visitors from them, and collects the contact details of people who want to hear back. It emails you each new lead and, each morning when there were conversations the day before, a short report with a "Who to call back" list.
+AgentPage puts a lead-catching chat on your website, and you set it up by asking Claude. Give Claude your website address and what a good enquiry looks like for your business. AgentPage reads your public pages, builds a chat that answers visitors from them first, then asks for a name and email, and for a phone number only if the visitor wants a call back. It emails you each new lead as soon as the visitor confirms their details, and each day (around 05:00 UTC, after any day with conversations) a short list of who to call back.
 
 ## What this plugin contains
 
@@ -12,9 +12,9 @@ AgentPage puts a lead-catching chat on your website, and you set it up by asking
 The plugin contains no scripts, no hooks and no packages, and it runs nothing on your computer. It sends nothing anywhere by itself. When you ask for something, Claude calls AgentPage tools on that connector, and only then is data sent:
 
 - to create or change a chat, the website address, business basics and settings you asked for;
-- to read leads or a report, the chat's ID and a period;
+- to read leads or a report, the chat's ID if you give one and a period;
 - to delete a chat, its ID and your explicit confirmation;
-- AgentPage returns your own chat settings and your own leads. A lead holds details a website visitor chose to give the chat, such as a name, email address, phone number and message.
+- AgentPage returns your own chat settings and your own leads. A lead holds details a website visitor chose to give the chat: a name, an email address, a phone number if they asked for a call back, and their message.
 
 In Claude Code, if you ask Claude to add the install snippet to your site, it edits a file in your project folder, and asks for your approval first. The connector itself is operated by AgentPage. It runs the chats on Landbot's platform, which acts as its service provider.
 
@@ -39,6 +39,8 @@ The plugin only guides Claude. The AgentPage connector in step 1 is what does th
 
 - AgentPage does not contact your leads. You decide who to call or write to.
 - The chat tells every visitor that it is an automated assistant, and that notice cannot be removed.
+- A visitor who leaves an email address and then drops off is still emailed to you, about 15 minutes later.
+- A tool to list your chats, `list_lead_agents`, is coming and is not available yet. Until it is, keep the chat's ID from when the chat was created, and give it to Claude in a new conversation.
 - It works on websites where you can add a snippet of code.
 - AgentPage never asks for passwords, API keys or payment card numbers.
 
