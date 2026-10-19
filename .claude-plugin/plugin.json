@@ -2,7 +2,7 @@
   "name": "agentpage",
   "displayName": "AgentPage",
   "description": "Put a lead-catching chat on your website from Claude. Guides you through creating the chat, installing it, and reading your leads and the daily list of who to call back. Uses the AgentPage connector.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Jiaqi Pan SL",
     "url": "https://getagent.page"
