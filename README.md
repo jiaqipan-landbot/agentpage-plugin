@@ -14,14 +14,16 @@ The plugin contains no scripts, no hooks and no packages, and it runs nothing on
 - to create or change a chat, the website address, business basics and settings you asked for;
 - to list your chats, nothing; to read leads or a report, the chat's ID and a period;
 - to delete a chat, its ID and your explicit confirmation;
-- AgentPage returns your own chat settings and your own leads. A lead holds details a website visitor chose to give the chat: a name, an email address, a phone number if they asked for a call back, and their message.
+- AgentPage returns your own chat settings and your own leads. A lead holds details a website visitor chose to give the chat: a name, an email address, a phone number if they asked for a call back, and their message. Access lasts 30 days from your last use, then Claude asks you to sign in again.
 
 In Claude Code, if you ask Claude to add the install snippet to your site, it edits a file in your project folder, and asks for your approval first. The connector itself is operated by AgentPage. It runs the chats on Landbot's platform, which acts as its service provider.
 
 ## Getting started
 
-1. In the Claude desktop app or at claude.ai, add AgentPage as a connector and sign in with your email address. There is no password. If AgentPage is in the connectors directory, add it from there.
-2. Add this plugin, then start a conversation in Claude Code or Cowork and switch AgentPage on.
+1. In Claude (web or desktop app), open **Customize**, then **Connectors**, and add AgentPage as a custom connector with the address `https://mcp.getagent.page/mcp`. Claude may warn that the link came from outside: check the name and address and press **Continue**, keep the detected sign-in options, press **Add**, then **Connect**, sign in with your email address and choose **Allow**. There is no password.
+2. Add this plugin, then start a new chat and paste the example below. If AgentPage is in the connectors directory, you can add it from there instead of step 1.
+
+Claude Code support is being verified: in our checks a connector added in Claude did not appear in Claude Code, so if AgentPage is missing there, use Claude (web or desktop app) or ChatGPT.
 3. Ask, for example: "Add a lead-catching chat to my website https://example.com. A good enquiry is someone asking for a quote. Send leads to me@example.com."
 
 ### Install this plugin from its repository
